@@ -1,1 +1,4 @@
-The directory cubical/... is a copy of the cubical library containing our formalisation. Please see cubical/Cubical/Papers/Containers.agda for the summary file of the formalisation.
+# Formalising Inductive and Coinductive Containers
+#### Stefania Damato, Thorsten Altenkirch, Axel Ljungström
+
+The directory cubical/... is a copy of the [cubical library](https://github.com/agda/cubical) containing our formalisation. Please see cubical/Cubical/Papers/Containers.agda for the summary file of the formalisation.
