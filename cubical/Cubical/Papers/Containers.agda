@@ -27,6 +27,8 @@ open import Cubical.Foundations.Prelude                     as Foundations
 open import Cubical.Data.W.W                                as W-Type
 open import Cubical.Codata.M.MRecord                        as M-Type
 
+open import Cubical.Data.Maybe                              as Maybe
+
 open import Cubical.Data.Containers.WildCat                 as Container
 
 -- 3
@@ -101,6 +103,12 @@ open W-Type using (W)
 -- The M-type
 open M-Type using (M)
 
+-- ℕ∞
+record N∞ : Type where
+  coinductive
+  field
+    pred∞ : Maybe N∞
+
 -- M-R
 open M-Type using (M-R)
 
@@ -113,10 +121,10 @@ open M-Type using (MCoind)
 -- Definition 3
 open Container using (Container)
 
--- Definition 5
+-- Definition 4
 open Container using (IContainer)
 
--- Definition 7
+-- Definition 6
 open ⟦_⟧F using (⟦_⟧)
 
 -- Definition 9
@@ -125,7 +133,7 @@ open Container using (Alg⟦_⟧)
 -- Definition 10
 open Container using (isInitialAlg⟦_⟧)
 
---Dual definitions (coalgebras)
+-- Dual definitions (coalgebras)
 open Container using (CoAlg⟦_⟧ ; isTerminalCoAlg⟦_⟧)
 
 
